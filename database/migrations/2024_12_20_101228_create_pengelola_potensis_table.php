@@ -11,8 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pengelola_potensis', function (Blueprint $table) {
+        Schema::create('pengelola_potensi', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('id_potensi');
+            $table->string('nama_pengelola');
+            $table->string('kontak_pengelola');
             $table->timestamps();
         });
     }
@@ -22,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pengelola_potensis');
+        Schema::dropIfExists('pengelola_potensi');
     }
 };
