@@ -28,13 +28,13 @@ export default {
         },
     },
     plugins: [
-        // require('tailwind-typewriter')({
-        // wordsets: {
-        //     myTitle: {
-        //     words: ["College Student", "Laravel Enthusiast"],
-        //     delay: 2
-        //     }
-        // }
-        // })
+        require('tailwind-typewriter')({
+        wordsets: {
+            myTitle: {
+            words: ["Mahasiswa", "Pengoding Brutal"],
+            delay: 2
+            }
+        }
+        })
     ],
 };
