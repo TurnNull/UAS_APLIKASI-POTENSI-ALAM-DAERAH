@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class KategoriPotensi extends Model
 {
-    /** @use HasFactory<\Database\Factories\KategoriPotensiFactory> */
-    use HasFactory;
+    protected $table = 'kategori_potensi';
+    protected $guarded = ['id'];
+
+    public function potensiAlam() {
+        $this->hasMany(PotensiAlam::class);
+    }
 }
